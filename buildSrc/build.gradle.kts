@@ -11,3 +11,7 @@ repositories {
 kotlinDslPluginOptions {
     experimentalWarning.set(false)
 }
+
+dependencies {
+    implementation(kotlin("script-runtime"))
+}
