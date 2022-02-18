@@ -1,8 +1,10 @@
 object Versions {
     // Material and androidX
-    const val material = "1.5.0"
-    const val appCompat = "1.4.1"
-    const val constraintLayout = "2.1.3"
+    const val material = "1.3.0-alpha02"
+    const val appCompat = "1.3.0-alpha02"
+    const val constraintLayout = "2.0.1"
+    const val swiperefreshlayout = "1.2.0-alpha01"
+    const val support = "1.0.0"
 
 
     //NetWorking
@@ -25,6 +27,7 @@ object Versions {
 
     //Hilt
     const val HiltVersion = "2.37"
+    const val HiltPluginVersion ="2.38.1"
 
     //coroutines
     const val Coroutines = "1.3.9"
@@ -41,8 +44,9 @@ object Versions {
     const val gradleVersionsPlugin = "0.29.0"
 
     //Kotlin
-    const val kotlinVersion = "1.7.0"
-    const val coreKtx = "1.6.0"
+    const val kotlinVersion = "1.4.0"
+    const val coreKtx ="1.5.0-alpha02"
+
 
 
     //Room
@@ -73,14 +77,26 @@ object BuildPlugins {
     const val kapt = "kotlin-kapt"
     const val apollo = "com.apollographql.apollo"
     const val androidApplication = "com.android.application"
+
+
     const val androidLibrary = "com.android.library"
     const val androidGradlePlugin = "com.android.tools.build:gradle:${Versions.buildToolsVersion}"
     const val kotlinGradlePlugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin}"
 
     const val hilt = "dagger.hilt.android.plugin"
 
+    const val Hilt ="dagger.hilt.android.plugin"
 
-    const val hiltPlugin ="dagger.hilt.android.plugin"
+   // const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android"
+
+  //  implementation("com.google.dagger:hilt-android:2.38.1")
+   // kapt("com.google.dagger:hilt-android-compiler:2.38.1")
+
+
+
+
+    const val hiltPlugin = "com.google.dagger:hilt-android-gradle-plugin:${Versions.HiltPluginVersion}"
+
 
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val kotlinAndroidExtensions = "org.jetbrains.kotlin.android.extensions"
@@ -114,6 +130,7 @@ object Libraries {
 
     const val hilt = "com.google.dagger:hilt-android:${Versions.HiltVersion}"
     const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.HiltVersion}"
+    const val  support = "androidx.legacy:legacy-support-v4:${Versions.support}"
 
 
     const val apollo = "com.apollographql.apollo:apollo-runtime:${Versions.apolloVersion}"
