@@ -1,0 +1,22 @@
+
+query GetMissions{
+
+    launchesPast(limit: 10) {
+        ...on Launch{
+            ... MissionFragment
+        }
+    }
+
+}
+fragment MissionFragment on Launch{
+    id
+    mission_name
+    mission_id
+}
+
+
+
+
+
+
+
